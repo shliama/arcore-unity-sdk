@@ -179,7 +179,7 @@ namespace GoogleARCore.HelloAR
         /// </summary>
         /// <param name="message">Message string to show in the toast.</param>
         /// <param name="length">Toast message time length.</param>
-        private static void _ShowAndroidToastMessage(string message)
+        public static void _ShowAndroidToastMessage(string message)
         {
             AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             AndroidJavaObject unityActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
